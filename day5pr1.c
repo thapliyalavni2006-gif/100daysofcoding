@@ -13,12 +13,10 @@ int main()
     scanf("%d", &t);
     int si;
     int ci;
-    int n;
-    printf("Enter number of times compounded  :");
-    scanf("%d,&n");
-    si = pr * rate * t;
-    ci = pr * (1 + rate / n) ^ n * t;
+    si = (pr * rate * t)/100;
+    ci = pr * (1 + rate / 100) -1;
     printf("Simple interest is :%d", si);
     printf("Compound interest is :%d", ci);
     return 0;
+
 }
