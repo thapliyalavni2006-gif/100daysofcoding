@@ -28,7 +28,8 @@ int main()
 	}
 	else if (days > 30)
 	{
-		printf("Memership cancelled");
+		printf("Membership cancelled");
 	}
 	return 0;
 }
+
