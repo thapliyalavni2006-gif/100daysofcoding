@@ -4,16 +4,10 @@
 int main()
 {
 	int n;
-	int sum = 0;
+	int sum;
 	printf("Enter value of n ");
 	scanf("%d", &n);
-	for (int i = 1; i <= n; i++)
-	{
-		if (i % 2 != 0)
-		{
-			sum = sum + i;
-		}
-	}
+	sum = n * n;
 	printf("Sum is %d\n", sum);
 	return 0;
 }
