@@ -7,4 +7,13 @@ int main()
 	printf("enter number ");
 	scanf("%d", &n);
 	digit = log10(n);
+	divide = pow(10, digit);
+	first = n / divide;
+	n = n % divide;
+	end = n % 10;
+	n = n / 10;
+	swap = end * divide + n * 10 + first;
+	printf("swap value is %d ", swap);
+	return 0;
+
 }
