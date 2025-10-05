@@ -8,13 +8,11 @@ int main() {
 	printf("Enter a string: ");
     fgets(str,100,stdin);
     while (str[len]!='\0') {
-        if (str[len]=='\n') {
-            break;
-        }
-        len++;
+	  len++;
     }
 	 printf("Reversed string: ");
     for (int i=len-1;i>=0;i--) {
         printf("%c",str[i]);  }
   return 0;
 }
+
