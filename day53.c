@@ -13,3 +13,17 @@ int n,i,p,res;
  {
 	scanf("%d",&arr[i]);
  }
+ int total=0,left=0;
+ for(i=0;i<n;i++)
+ {
+	total=total+arr[i];
+ }
+ if (left==total-left-arr[i])  //left=sum of elements before i
+  {
+            printf("Pivot index is %d\n",i);
+            return 0;
+  }
+     left+=arr[i];
+     printf("No pivot index found\n");
+    return 0;
+}
