@@ -20,34 +20,27 @@ int main()
 	 int n,i;
 	printf("How many records do you want? ");
     scanf("%d",&n);
-	struct Student s[n];
-    for (i=0;i<n;i++) {
-        printf("Enter details about student %d (Name,Roll no.Marks): ",i+1);
-        scanf("%s %d %f",s[i].name,s[i].roll,&s[i].marks);
-	}
-		for (i=0;i<n;i++) {
-        fprintf(ptr,"%s %d %.2f\n",s[i].name,s[i].roll,s[i].marks);
+	   for(int i=0;i<n;i++){
+        printf("enter name of student :");
+        scanf("%s",&name[i]);
+        
+        printf("enter roll no: ");
+        scanf("%d",&roll);
+
+        printf("enter  marks: ");
+        scanf("%d",&marks);
+     fprintf(fp,"%s %d %f \n",name,roll,marks);
     }
-}
-//now to read file
-	 ptr=fopen("student.txt","r");
-    if (ptr==NULL) {
-        printf("File could not be opened for reading.\n");
-        return 0;
-    }
-
-    struct Student t;
-    printf("\nStudent Records from file:\n");
-    while (fscanf(ptr,"%s %d %f",t.name,&t.roll,&t.marks)==3) //if all three are read successfully then condition is true otherwise false
-	{
-
-        printf("Name: %s | Roll: %d | Marks: %.0f\n", t.name,t.roll,t.marks);
-    }
-
-    fclose(ptr);
-    printf("Records written to student.txt\n");
-return 0;
-
+    
+     printf("    Student Records    \n");
+    
+     for(int i=0;i<n;i++){
+     fscanf(fp,"%s %d %d", intro, &t, &s);
+     printf("Name: %s, Roll: %d, Marks: %f\n",name,roll,marks);}
+    
+ fclose(fp);
+     return 0;
   }
+
 
 
