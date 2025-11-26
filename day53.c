@@ -15,6 +15,7 @@ int n,i,p;
  }
  int total=0,left=0;
  for(i=0;i<n;i++)
+{
  {
 	total=total+arr[i];
  }
