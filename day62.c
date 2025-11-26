@@ -11,22 +11,22 @@ int main()
 	{
 		scanf("%d",&arr[i]);
 	}
-	int currentMax=arr[0]; // track sum of current subarray.
-    int globalMax=arr[0]; //maximum sum found.
+	int currmax=arr[0]; // track sum of current subarray.
+    int glomax=arr[0]; //maximum sum found.
     for(i=1;i<n;i++) {
-        if(currentMax<0)  //resetting
+        if(currmax<0)  //resetting
 		{
-            currentMax=arr[i];
+            currmax=arr[i];
         } else
 		{
-            currentMax+=arr[i];
+            currmax+=arr[i];
         }
-        if(currentMax>globalMax)
+        if(currmax>glomax)
 		{
-            globalMax=currentMax;
+            glomax=currmax;
         }
     }
-printf("Maximum contiguous subarray sum: %d\n",globalMax);
+printf("Maximum contiguous subarray sum: %d\n",glomax);
     return 0;
 }
 
