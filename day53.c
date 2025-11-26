@@ -23,7 +23,8 @@ int n,i,p;
             printf("Pivot index is %d\n",i);
             return 0;
   }
-     left+=arr[i];
+     left+=arr[i]
+}
      printf("No pivot index found\n");
     return 0;
 }
