@@ -12,9 +12,8 @@ int n,i;
 	{
 		scanf("%d",&nums[i]);
 	}
-	int a;
-	printf("Enter i ");
-	scanf("%d",&a);
+	
+	
 	int answer[n];
     int prefix=1;   
     for (int i=0;i<n;i++) {
