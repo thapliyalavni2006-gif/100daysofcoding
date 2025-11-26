@@ -4,7 +4,7 @@
 
 int main()
 {
-int n,i,p,res;
+int n,i,p;
  printf("How many elements do you want in your sorted array?");
  scanf("%d",&n);
  printf("Enter sorted array: ");
